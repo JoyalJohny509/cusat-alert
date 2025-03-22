@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #4d1f00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Home Button (3cm x 3cm, Beige Background, Positioned Under Main Headline) */
+.home-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home {
+    background: beige;
+    color: #333;
+    width: 3cm;
+    height: 3cm;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #4d1f00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.home:hover {
+    background: #e3cba7;
+    transform: scale(1.05);
+}
+
+/* Large Square Buttons (Safe Route, Emergency Contacts, Report Incident) */
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main-menu button {
+    width: 90%;
+    max-width: 400px;
+    height: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: beige;
+    border: 2px solid #4d1f00;
+    border-radius: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.main-menu button:hover {
+    background-color: #e3cba7;
+    transform: scale(1.05);
+}
+
+/* Map */
+#map-container {
+    width: 90%;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #4d1f00;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Emergency Contact Buttons (Larger & Stylish) */
+.emergency-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.call-button {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.call-button.police {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.call-button.security {
+    background-color: #ff9800;
+    color: white;
+}
+
+.call-button.hospital {
+    background-color: #00796b;
+    color: white;
+}
+
+.call-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
